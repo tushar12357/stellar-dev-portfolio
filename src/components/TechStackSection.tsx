@@ -4,7 +4,7 @@ import { useRef } from "react";
 const categories = [
   {
     title: "Frontend",
-    techs: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Material UI", "HTML/CSS"],
+    techs: ["React", "Next.js", "TypeScript", "Tailwind CSS", "ShadCN", "HTML/CSS"],
   },
   {
     title: "Backend",
@@ -20,7 +20,7 @@ const categories = [
   },
   {
     title: "DevOps & Tools",
-    techs: ["Docker", "AWS (S3, EC2)", "Git", "GitHub", "Nginx", "Linux"],
+    techs: ["Docker", "AWS (S3, EC2)", "Git", "GitHub", "Linux"],
   },
 ];
 

@@ -6,9 +6,9 @@ const experiences = [
   {
     company: "Ravan.ai",
     role: "Software Development Engineer - 1",
-    period: "Oct 2024 – Present",
+    period: "Feb 2025 – Present",
     promoted: true,
-    prevRole: "SDE Intern (Jun 2024 – Oct 2024)",
+    prevRole: "SDE Intern (Jan 2025 – Feb 2025)",
     achievements: [
       "Built AI support SaaS platform with real-time voice/chat using LiveKit, WebSockets & React",
       "Designed RESTful APIs with Node.js, Express.js, MongoDB; integrated OpenAI, Gemini, Claude",

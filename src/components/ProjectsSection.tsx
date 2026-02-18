@@ -3,21 +3,41 @@ import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
+   {
+    title: "Payment Gateway Service",
+    description:
+      "Scalable payment processing microservice with multi-provider integration, transaction management, webhook handling, and real-time status tracking with comprehensive error recovery.",
+    tech: ["Node.js", "Express", "MongoDB", "Docker", "AWS", "REST API"],
+    github: "https://github.com/tushar12357/payment_gateway",
+    demo: "https://payment-gateway-amber.vercel.app/",
+  },
+  {
+    title: "Private Knowledge AI",
+    description:
+      "AI-powered document intelligence system that allows users to upload PDFs and interact with them conversationally. Implements semantic search using embeddings with vector storage, enabling contextual Q&A grounded strictly in user-uploaded documents.",
+    tech: ["Next.js", "Node.js", "Hugging Face", "Supabase", "Vector Database", "Embeddings", "PDF Parsing"],
+    github: "https://github.com/tushar12357/private_knowledge", // update if different
+    demo: "https://private-knowledge-pied.vercel.app/", // add deployed link if available
+  },
+ 
   {
     title: "AI Support SaaS Platform",
     description:
       "End-to-end conversational AI platform with real-time voice & chat support. Features custom AI workflows, intent recognition, sentiment analysis, and automated ticket creation. Handles thousands of concurrent sessions.",
     tech: ["React", "Next.js", "Node.js", "LiveKit", "OpenAI", "Redis", "BullMQ", "MongoDB", "WebSockets"],
-    github: "#",
+    github: "https://github.com/tushar12357/ai_support_saas",
+    demo:"#"
   },
   {
-    title: "Payment Gateway Service",
+    title: "Real-Time Chat Backend",
     description:
-      "Scalable payment processing microservice with multi-provider integration, transaction management, webhook handling, and real-time status tracking with comprehensive error recovery.",
-    tech: ["Node.js", "Express", "MongoDB", "Docker", "AWS", "REST API"],
-    github: "#",
+      "Scalable chat application backend supporting real-time messaging, typing indicators, online presence, and message persistence. Designed with WebSockets, Redis pub/sub for horizontal scaling, and JWT-based authentication.",
+    tech: ["Node.js", "Express", "WebSockets", "Redis", "MongoDB", "JWT", "Docker"],
+    github: "https://github.com/tushar12357/socialize_backend", // update if needed
+    demo: "#"
   },
 ];
+
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -68,13 +88,15 @@ const ProjectsSection = () => {
               <div className="flex gap-4">
                 <a
                   href={project.github}
+                  target="_blank"
                   className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Github className="w-4 h-4" />
                   Code
                 </a>
                 <a
-                  href="#"
+                  href={project.demo}
+                  target="_blank"
                   className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" />

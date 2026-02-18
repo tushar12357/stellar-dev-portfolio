@@ -34,24 +34,53 @@ const AboutSection = () => {
           className="glass glow-border rounded-2xl p-8 sm:p-10"
         >
           <p className="text-foreground/85 font-body text-base sm:text-lg leading-relaxed mb-6">
-            Full-Stack Software Developer with 1.5+ years of experience building scalable web applications. 
-            Currently engineering real-time AI-powered systems at <span className="text-primary font-semibold">Ravan.ai</span>, 
-            where I build conversational AI SaaS platforms handling thousands of concurrent sessions.
+            Full-Stack Software Developer with 1.5+ years of experience building
+            scalable web applications. Currently engineering real-time
+            AI-powered systems at{" "}
+            <span className="text-primary font-semibold">Ravan.ai</span>, where
+            I build conversational AI SaaS platforms handling thousands of
+            concurrent sessions.
           </p>
           <p className="text-foreground/85 font-body text-base sm:text-lg leading-relaxed mb-8">
-            When I'm not debugging microservices at 2 AM, you'll find me stargazing — obsessed with 
-            <span className="text-cosmic-purple font-semibold"> black holes</span>, 
-            <span className="text-cosmic-cyan font-semibold"> neutron stars</span>, and the mysteries of 
-            <span className="text-cosmic-gold font-semibold"> dark matter</span>. 
-            I believe the best code, like the universe, is elegant, scalable, and endlessly expanding.
+            When I'm not debugging microservices at 2 AM, you'll find me
+            stargazing — obsessed with
+            <span className="text-cosmic-purple font-semibold">
+              {" "}
+              black holes
+            </span>
+            ,
+            <span className="text-cosmic-cyan font-semibold">
+              {" "}
+              neutron stars
+            </span>
+            , and the mysteries of
+            <span className="text-cosmic-gold font-semibold"> dark matter</span>
+            . I believe the best code, like the universe, is elegant, scalable,
+            and endlessly expanding.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
             {[
-              { icon: Github, href: "https://github.com/tushar-c23", label: "GitHub" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/tushar-chaudhary-b96004200/", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:tusharchaudhary2307@gmail.com", label: "Email" },
-              { icon: Phone, href: "tel:+918826814709", label: "Phone" },
+              {
+                icon: Github,
+                href: "https://github.com/tushar12357",
+                label: "GitHub",
+              },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/tushar-chaudhary-4a49621a3/",
+                label: "LinkedIn",
+              },
+              {
+                icon: Mail,
+                href: "https://mail.google.com/mail/?view=cm&fs=1&to=tusharcdry@gmail.com&su=Let's%20Work%20Together&body=Hi%20Tushar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding...%0A%0ARegards,",
+                label: "Email",
+              },
+              {
+                icon: Phone,
+                href: "https://wa.me/919821985448?text=Hi%20Tushar%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding%20a%20project/opportunity.",
+                label: "WhatsApp",
+              },
             ].map((link) => (
               <a
                 key={link.label}
