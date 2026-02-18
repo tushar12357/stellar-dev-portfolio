@@ -20,7 +20,7 @@ const experiences = [
   {
     company: "Shanture",
     role: "Software Developer Intern",
-    period: "Apr 2024 – Jun 2024",
+    period: "Jul 2024 – Sept 2024",
     achievements: [
       "Engineered real-time features with WebSockets; improved engagement by 30%",
       "Implemented responsive UI components with React.js and Material UI",
@@ -29,7 +29,7 @@ const experiences = [
   {
     company: "Dimitra",
     role: "Frontend Developer Intern",
-    period: "Oct 2023 – Jan 2024",
+    period: "Jan 2024 – Feb 2024",
     achievements: [
       "Developed data visualization dashboards for agricultural analytics using React.js",
     ],

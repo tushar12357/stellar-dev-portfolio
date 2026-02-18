@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
-   {
+  {
     title: "Payment Gateway Service",
     description:
       "Scalable payment processing microservice with multi-provider integration, transaction management, webhook handling, and real-time status tracking with comprehensive error recovery.",
@@ -15,29 +15,54 @@ const projects = [
     title: "Private Knowledge AI",
     description:
       "AI-powered document intelligence system that allows users to upload PDFs and interact with them conversationally. Implements semantic search using embeddings with vector storage, enabling contextual Q&A grounded strictly in user-uploaded documents.",
-    tech: ["Next.js", "Node.js", "Hugging Face", "Supabase", "Vector Database", "Embeddings", "PDF Parsing"],
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Hugging Face",
+      "Supabase",
+      "Vector Database",
+      "Embeddings",
+      "PDF Parsing",
+    ],
     github: "https://github.com/tushar12357/private_knowledge", // update if different
     demo: "https://private-knowledge-pied.vercel.app/", // add deployed link if available
   },
- 
+
   {
     title: "AI Support SaaS Platform",
     description:
       "End-to-end conversational AI platform with real-time voice & chat support. Features custom AI workflows, intent recognition, sentiment analysis, and automated ticket creation. Handles thousands of concurrent sessions.",
-    tech: ["React", "Next.js", "Node.js", "LiveKit", "OpenAI", "Redis", "BullMQ", "MongoDB", "WebSockets"],
+    tech: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "LiveKit",
+      "OpenAI",
+      "Redis",
+      "BullMQ",
+      "MongoDB",
+      "WebSockets",
+    ],
     github: "https://github.com/tushar12357/ai_support_saas",
-    demo:"#"
+    demo: "#",
   },
   {
     title: "Real-Time Chat Backend",
     description:
       "Scalable chat application backend supporting real-time messaging, typing indicators, online presence, and message persistence. Designed with WebSockets, Redis pub/sub for horizontal scaling, and JWT-based authentication.",
-    tech: ["Node.js", "Express", "WebSockets", "Redis", "MongoDB", "JWT", "Docker"],
+    tech: [
+      "Node.js",
+      "Express",
+      "WebSockets",
+      "Redis",
+      "MongoDB",
+      "JWT",
+      "Docker",
+    ],
     github: "https://github.com/tushar12357/socialize_backend", // update if needed
-    demo: "#"
+    demo: "#",
   },
 ];
-
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -71,8 +96,12 @@ const ProjectsSection = () => {
               transition={{ delay: 0.3 + i * 0.2, duration: 0.6 }}
               className="group glass glow-border rounded-2xl p-8 hover:scale-[1.02] transition-all duration-500 hover:shadow-[0_0_50px_hsl(var(--primary)/0.15)]"
             >
-              <h3 className="font-display text-xl font-bold text-primary text-glow mb-3">{project.title}</h3>
-              <p className="text-foreground/70 text-sm leading-relaxed mb-6">{project.description}</p>
+              <h3 className="font-display text-xl font-bold text-primary text-glow mb-3">
+                {project.title}
+              </h3>
+              <p className="text-foreground/70 text-sm leading-relaxed mb-6">
+                {project.description}
+              </p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((t) => (
@@ -94,14 +123,16 @@ const ProjectsSection = () => {
                   <Github className="w-4 h-4" />
                   Code
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  Demo
-                </a>
+                {project.demo !== "#" && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Demo
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
